@@ -140,7 +140,7 @@ module FakeFS
       symlink.target
     end
 
-    def self.read(path)
+    def self.read(path, *args)
       file = new(path)
       if file.exists?
         file.read
